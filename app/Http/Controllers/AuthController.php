@@ -9,7 +9,17 @@ class AuthController extends Controller
 {
     public function showLoginForm()
     {
+        return view('login');
+    }
+
+    public function showD_historialForm()
+    {
         return view('D_historial');
+    }
+
+    public function showD_reservaForm()
+    {
+        return view('D_reserva');
     }
 
     public function login(Request $request)
