@@ -12,6 +12,21 @@ class AuthController extends Controller
         return view('login');
     }
 
+    public function showClandingForm()
+    {
+        return view('Clanding');
+    }
+
+    public function showDlandingForm()
+    {
+        return view('Dlanding');
+    }
+
+    public function showDBAlandingForm()
+    {
+        return view('DBAlanding');
+    }
+
     public function showD_historialForm()
     {
         return view('D_historial');

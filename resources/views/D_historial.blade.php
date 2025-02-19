@@ -15,6 +15,7 @@
             background-attachment: fixed;
         }
     </style>
+    
 </head>
 <body class="bg-gray-100 bg-opacity-90">
 

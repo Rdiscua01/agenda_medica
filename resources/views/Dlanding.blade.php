@@ -1,3 +1,9 @@
+@extends('layouts.app')
+@section('DLANDcontent')
+
 <div>
-    <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
+    <h1>
+        Landing view para Medico.
+    </h1>
 </div>
+@endsection
