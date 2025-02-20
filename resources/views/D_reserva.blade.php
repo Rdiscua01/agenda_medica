@@ -3,48 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Citas - Doctor</title>
+    <title>Bienvenido, Doctor</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Estilos personalizados para la imagen de fondo */
         body {
             background-image: url('/imagenes/D_reservaimagen.jpeg'); /* Cambia por tu imagen de fondo */
-            background-size: cover; /* Cubre toda la pantalla */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que se repita */
-            background-attachment: fixed; /* Fija la imagen al desplazarse */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
     </style>
 </head>
+    <!-- Diseño encabezado -->
+@extends('layouts.app2')
+@section('D_reservacontent')
 <body class="bg-gray-100 bg-opacity-90">
 
     <!-- Contenedor principal -->
     <div class="min-h-screen flex items-center justify-center px-4 py-8">
         <!-- Contenedor del contenido -->
-        <div class="bg-white shadow-2xl rounded-lg p-8 w-full max-w-4xl bg-opacity-95 backdrop-blur-sm">
-            <!-- Título -->
-            <h1 class="text-4xl font-bold text-center mb-8 text-blue-800">Gestión de Citas</h1>
+        <div class="bg-white shadow-2xl rounded-lg p-8 w-full max-w-6xl bg-opacity-95 backdrop-blur-sm">
+            <!-- Encabezado con título y botón -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                <!-- Título alineado a la izquierda -->
+                <h1 class="text-4xl font-bold text-gray-800 mb-4 md:mb-0">Bienvenido, Doctor</h1>
 
-            <!-- Recuadro para el contenido de citas -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-inner border border-gray-200">
-                <!-- Espacio para el contenido dinámico -->
-                <div id="contenido-citas" class="space-y-4">
-                    <!-- Aquí el backend cargará las citas dinámicamente -->
-                </div>
+                <!-- Botón "Agendar Cita Nueva" alineado a la derecha y un poco más abajo -->
+                <button class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                    Agendar Cita Nueva
+                </button>
             </div>
 
-            <!-- Botones de Acción (no funcionales por ahora) -->
-            <div class="flex justify-end mt-8 space-x-4">
-                <button class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition duration-300">
-                    Confirmar
-                </button>
-             
-                <button class="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition duration-300">
-                    Cancelar
-                </button>
+            <!-- Contenedor de citas en cuadrícula -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Ejemplo de cita -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border-4 border-black">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Cita de (Nombre Paciente)</h3>
+                    <p class="text-gray-600 mb-4">Detalles de la cita...</p>
+                    <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                        Editar
+                    </button>
+                </div>
+
+                <!-- Repetir para más citas -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border-4 border-black">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Cita de (Nombre Paciente)</h3>
+                    <p class="text-gray-600 mb-4">Detalles de la cita...</p>
+                    <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                        Editar
+                    </button>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border-4 border-black">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Cita de (Nombre Paciente)</h3>
+                    <p class="text-gray-600 mb-4">Detalles de la cita...</p>
+                    <button class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+                        Editar
+                    </button>
+                </div>
+
+                <!-- Puedes agregar más recuadros de citas aquí -->
             </div>
         </div>
     </div>
 
 </body>
+@endsection
 </html>
