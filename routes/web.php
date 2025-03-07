@@ -5,6 +5,9 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::get('/historial', [AuthController::class, 'showC_historialForm'])->name('Chistorial');
+
+Route::get('/preserva', [AuthController::class, 'showP_reservaForm'])->name('Preserva');
+
 Route::get('/pacientebienvenido', [AuthController::class, 'showClandingForm'])->name('Clanding');
 Route::get('/doctorbienvenido', [AuthController::class, 'showDlandingForm'])->name('Dlanding');
 Route::get('/dbabienvenido', [AuthController::class, 'showDBAlandingForm'])->name('DBAlanding');

@@ -17,6 +17,11 @@ class AuthController extends Controller
         return view('Clanding');
     }
 
+    public function showP_reservaForm()
+    {
+        return view('P_reserva');
+    }
+
     public function showC_historialForm()
     {
         return view('C_historial');
