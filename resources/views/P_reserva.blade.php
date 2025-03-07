@@ -15,60 +15,55 @@
                 <button class="bg-red-500 text-white px-4 py-2 rounded">Cerrar Sesión</button>
             </div>
         </div>
-        <div class="container mx-auto mt-6 p-4">
-            <h4 class="text-center text-lg font-semibold">Cita del paciente</h4>
-            <div class="flex justify-center mt-4">
-                <input type="text" class="border p-2 w-1/2 rounded mr-2" placeholder="Buscar paciente...">
-                <button class="bg-blue-600 text-white px-4 py-2 rounded">Buscar</button>
-            </div>
-            <div class="grid grid-cols-3 gap-4 mt-6">
-                <div class="col-span-2">
-                    <table class="w-full border border-gray-300">
-                        <thead class="bg-gray-200">
-                            <tr>
-                                <th class="p-2 border">Nombre Completo</th>
-                                <th class="p-2 border">Código Seguro Social</th>
-                                <th class="p-2 border">Número de Celular</th>
-                                <th class="p-2 border">Fecha de Nacimiento</th>
-                                <th class="p-2 border">Edad</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-white">
-                                <td class="p-2 border flex items-center"><img src="user-icon.png" width="30" class="mr-2"> Username</td>
-                                <td class="p-2 border">Content</td>
-                                <td class="p-2 border">Content</td>
-                                <td class="p-2 border">Content</td>
-                                <td class="p-2 border">Content</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="w-full border border-gray-300 mt-4">
-                        <thead class="bg-gray-200">
-                            <tr>
-                                <th class="p-2 border">Doctor encargado</th>
-                                <th class="p-2 border">Área médica</th>
-                                <th class="p-2 border">Número de doctor</th>
-                                <th class="p-2 border">Estado de la cita</th>
-                                <th class="p-2 border">Día y hora</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-white">
-                                <td class="p-2 border flex items-center"><img src="user-icon.png" width="30" class="mr-2"> Username</td>
-                                <td class="p-2 border">Content</td>
-                                <td class="p-2 border">Content</td>
-                                <td class="p-2 border">Content</td>
-                                <td class="p-2 border">Content</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <div class="container mx-auto mt-6 p-4 bg-white shadow-md rounded-lg">
+            <h4 class="text-center text-lg font-semibold">Formulario de Reserva de Paciente</h4>
+            <form class="mt-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700">Nombre Completo</label>
+                        <input type="text" class="border p-2 w-full rounded" placeholder="Ingrese el nombre">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Código Seguro Social</label>
+                        <input type="text" class="border p-2 w-full rounded" placeholder="Ingrese el código">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Número de Celular</label>
+                        <input type="text" class="border p-2 w-full rounded" placeholder="Ingrese el número">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Fecha de Nacimiento</label>
+                        <input type="date" class="border p-2 w-full rounded">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Doctor Encargado</label>
+                        <input type="text" class="border p-2 w-full rounded" placeholder="Nombre del doctor">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Área Médica</label>
+                        <input type="text" class="border p-2 w-full rounded" placeholder="Especialidad médica">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Estado de la Cita</label>
+                        <select class="border p-2 w-full rounded">
+                            <option>Programada</option>
+                            <option>Confirmada</option>
+                            <option>Cancelada</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Día y Hora</label>
+                        <input type="datetime-local" class="border p-2 w-full rounded">
+                    </div>
                 </div>
-                <div class="col-span-1 border p-4 bg-white">
-                    <h6 class="text-center font-semibold">INFORMACIÓN DEL PACIENTE Y MOTIVOS POR LOS QUE ASISTE</h6>
-                    <textarea class="w-full border p-2 mt-2 h-40"></textarea>
+                <div class="mt-4">
+                    <label class="block text-gray-700">Motivo de la Consulta</label>
+                    <textarea class="border p-2 w-full rounded" rows="4" placeholder="Describa el motivo"></textarea>
                 </div>
-            </div>
+                <div class="mt-4 text-center">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded">Reservar Cita</button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

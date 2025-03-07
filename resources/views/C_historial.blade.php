@@ -17,31 +17,31 @@
         <div class="grid grid-cols-2 gap-4 p-4">
             <div>
                 <label class="block text-gray-700">Nombre del Médico</label>
-                <input type="text" class="w-full p-2 border rounded">
+                <input type="text" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Código de seguro social</label>
-                <input type="text" class="w-full p-2 border rounded">
+                <input type="text" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Área del médico</label>
-                <input type="text" class="w-full p-2 border rounded">
+                <input type="text" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Nombre completo</label>
-                <input type="text" class="w-full p-2 border rounded">
+                <input type="text" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Día y Fecha de la cita</label>
-                <input type="date" class="w-full p-2 border rounded">
+                <input type="date" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Edad</label>
-                <input type="number" class="w-full p-2 border rounded">
+                <input type="number" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Estado de la cita</label>
-                <select class="w-full p-2 border rounded">
+                <select class="w-full p-2 border rounded" disabled>
                     <option>Confirmada</option>
                     <option>Pendiente</option>
                     <option>Cancelada</option>
@@ -49,15 +49,15 @@
             </div>
             <div>
                 <label class="block text-gray-700">DNI</label>
-                <input type="text" class="w-full p-2 border rounded">
+                <input type="text" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Hora de la cita</label>
-                <input type="time" class="w-full p-2 border rounded">
+                <input type="time" class="w-full p-2 border rounded" disabled>
             </div>
             <div>
                 <label class="block text-gray-700">Sexo</label>
-                <select class="w-full p-2 border rounded">
+                <select class="w-full p-2 border rounded" disabled>
                     <option>Masculino</option>
                     <option>Femenino</option>
                     <option>Otro</option>
@@ -65,16 +65,27 @@
             </div>
             <div>
                 <label class="block text-gray-700">Número de celular</label>
-                <input type="tel" class="w-full p-2 border rounded">
+                <input type="tel" class="w-full p-2 border rounded" disabled>
             </div>
             <div class="col-span-2">
                 <label class="block text-gray-700">Información de la cita y recomendaciones</label>
-                <textarea class="w-full p-2 border rounded h-24"></textarea>
+                <textarea class="w-full p-2 border rounded h-24" disabled></textarea>
+            </div>
+            <div class="col-span-2">
+                <label class="block text-gray-700">Receta médica</label>
+                <input type="file" class="w-full p-2 border rounded bg-white" accept="image/*">
+            </div>
+            <div class="col-span-2">
+                <label class="block text-gray-700">Notas adicionales del médico</label>
+                <textarea class="w-full p-2 border rounded h-24" disabled></textarea>
+            </div>
+            <div class="col-span-2">
+                <label class="block text-gray-700">Siguiente cita recomendada</label>
+                <input type="date" class="w-full p-2 border rounded" disabled>
             </div>
         </div>
-        <div class="flex justify-between items-center p-4">
-            <button class="bg-gray-400 text-white px-4 py-2 rounded">Cancelar</button>
-            <button class="bg-purple-500 text-white px-4 py-2 rounded">Guardar</button>
+        <div class="flex justify-center p-4">
+            <button class="bg-gray-400 text-white px-4 py-2 rounded">Cerrar</button>
         </div>
     </div>
     <footer class="bg-blue-500 text-white text-center p-2 mt-5">
